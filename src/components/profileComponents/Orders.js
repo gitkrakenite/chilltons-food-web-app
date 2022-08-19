@@ -37,11 +37,11 @@ const Orders = (props) => {
                     <th>TOTAL</th>
                   </tr>
                 </thead>
-                <tbody>
+                <tbody style={{ backgroundColor: "white" }}>
                   {orders.map((order) => (
                     <tr
                       className={`${
-                        order.isPaid ? "alert-success" : "alert-danger"
+                        order.isPaid ? "alert-success" : "alert-success"
                       }`}
                       key={order._id}
                     >

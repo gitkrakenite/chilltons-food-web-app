@@ -10,7 +10,7 @@ const ContactInfo = () => {
               <i className="fas fa-phone-alt"></i>
             </div>
             <h5>Call Us</h5>
-            <p>0780 252509</p>
+            <p>+254 702 610175</p>
           </div>
         </div>
         <div className="col-12 col-md-4 contact-Box">
@@ -19,7 +19,7 @@ const ContactInfo = () => {
               <i className="fas fa-map-marker-alt"></i>
             </div>
             <h5>Location</h5>
-            <p>Nairobi Kenya</p>
+            <p>Daystar Athi Campus</p>
           </div>
         </div>
         <div className="col-12 col-md-4 contact-Box">

@@ -1,0 +1,121 @@
+.testimonialsCont {
+  margin-top: 60px;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.testimonialsCont h2 {
+  text-align: center;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+.testDivider {
+  height: 8px;
+  background-color: #f02d34;
+  width: 20%;
+  text-align: center;
+  margin-bottom: 30px;
+  border-radius: 5px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.testimonialsCont p {
+  margin-top: 8px;
+  font-size: 20px;
+  letter-spacing: 1px;
+  text-align: center;
+  background-color: black;
+  color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.testWrapper {
+  /* display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center; */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 80px;
+  width: 98%;
+  margin: auto;
+}
+
+.testFirstCont {
+  width: 90%;
+  margin: auto;
+}
+
+.testFirstCont img {
+  border-radius: 10px;
+  width: 100%;
+  height: 25em;
+  object-fit: cover;
+}
+
+.testCenterCont {
+  width: 90%;
+  margin: auto;
+}
+
+.testCenterCont img {
+  border-radius: 10px;
+  width: 100%;
+  height: 25em;
+  object-fit: cover;
+}
+
+.testLastCont {
+  width: 90%;
+  margin: auto;
+}
+
+.testLastCont img {
+  width: 100%;
+  border-radius: 10px;
+  height: 25em;
+  object-fit: cover;
+}
+
+@media (max-width: 900px) {
+  .testWrapper {
+    /* display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 80px;
+    width: 98%;
+    margin: auto;
+  }
+
+  .testLastCont {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .testWrapper {
+    /* display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center; */
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 80px;
+    width: 98%;
+    margin: auto;
+  }
+
+  .testCenterCont {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+}

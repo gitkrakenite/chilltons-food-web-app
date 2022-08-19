@@ -34,9 +34,17 @@ const Footer = () => {
             src="https://icons-for-free.com/iconfiles/png/512/cash+checkout+discover+network+online+shopping+payment+method-1320191225548835050.png"
           />
         </div> */}
-        <div>
-          <p> &copy; 2022 Valerian All rights reserved</p>
-        </div>
+      </div>
+
+      <div
+        style={{
+          backgroundColor: "black",
+          color: "white",
+          padding: "20px",
+          textAlign: "center",
+        }}
+      >
+        <p> &copy; 2022 Valerian All rights reserved</p>
       </div>
     </div>
   );

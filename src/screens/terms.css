@@ -1,0 +1,38 @@
+.terms_wrapper {
+  width: 95%;
+  margin: auto;
+  padding-top: 20px;
+}
+
+.terms_wrapper h2 {
+  margin-bottom: 20px;
+  margin-top: 20px;
+  text-align: center;
+  font-size: 20px;
+}
+
+.terms_wrapper h4 {
+  text-decoration: underline;
+  margin-bottom: 10px;
+}
+
+.spx {
+  background-color: #f02d34;
+  color: #fff;
+}
+
+.terms_seller {
+  padding: 10px;
+  box-shadow: 3px 5px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 3px 5px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 3px 5px 5px 0px rgba(0, 0, 0, 0.75);
+  margin-bottom: 20px;
+}
+
+.terms_buyer {
+  padding: 10px;
+  box-shadow: 3px 5px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 3px 5px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 3px 5px 5px 0px rgba(0, 0, 0, 0.75);
+  margin-bottom: 20px;
+}

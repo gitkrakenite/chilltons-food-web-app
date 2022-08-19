@@ -201,7 +201,10 @@ const OrderScreen = ({ match }) => {
                       <td>
                         <strong>Shipping</strong>
                       </td>
-                      <td>Ksh.{order.shippingPrice}</td>
+                      {/* <td>Ksh.{order.shippingPrice}</td> */}
+                      <td style={{ backgroundColor: "red", color: "white" }}>
+                        Check Email after order
+                      </td>
                     </tr>
                     <tr>
                       <td>
@@ -217,7 +220,7 @@ const OrderScreen = ({ match }) => {
                     </tr>
                   </tbody>
                 </table>
-                {!order.isPaid && (
+                {/* {!order.isPaid && (
                   <div className="col-12">
                     {loadingPay && <Loading />}
                     {!sdkReady ? (
@@ -229,7 +232,7 @@ const OrderScreen = ({ match }) => {
                       />
                     )}
                   </div>
-                )}
+                )} */}
               </div>
             </div>
           </>

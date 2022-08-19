@@ -38,6 +38,8 @@ const ShippingScreen = ({ history }) => {
           <input
             type="text"
             autoComplete="false"
+            minLength="4"
+            maxlength="15"
             name="hidden"
             placeholder="Enter address & House No"
             value={address}
@@ -46,13 +48,17 @@ const ShippingScreen = ({ history }) => {
           />
           <input
             type="text"
-            placeholder="Enter city"
+            minLength="4"
+            maxlength="15"
+            placeholder="Enter city or town"
             value={city}
             required
             onChange={(e) => setCity(e.target.value)}
           />
           <input
-            type="text"
+            type="number"
+            minLength="4"
+            maxlength="15"
             placeholder="Enter phone number"
             value={postalCode}
             required

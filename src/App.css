@@ -63,10 +63,10 @@ textarea:focus {
   padding: 10px 0px 10px 0px;
 }
 .navbar-brand img {
-  width: 75px;
+  width: 100%;
   height: 75px;
   object-fit: cover;
-  border-radius: 50%;
+  /* border-radius: 60%; */
 }
 .input-group {
   height: 50px;
@@ -126,110 +126,105 @@ textarea:focus {
   display: none;
 }
 
-/* Hero section */
+/* Trial hero section styling */
+
 .hero_section {
   width: 95%;
-  background-color: rgb(212, 211, 211);
   margin: auto;
+  padding: 10em;
+  background:
+    /* top, transparent black, faked with gradient */ linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.6)
+    ),
+    /* bottom, image */ url("./assets/webBg.jpg");
+
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+
   border-radius: 20px;
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
+  text-align: center;
+  padding: 20px;
+  align-items: center;
+
+  line-height: 2em;
+  letter-spacing: 2px;
 }
 
-.text_wrap {
-  padding: 100px 60px;
-  justify-content: flex-start;
-}
-
-.text_wrap {
+.hero_wrapper {
+  color: #fff;
+  padding: 5em;
   line-height: 1.8em;
 }
 
-.text_wrap h4 {
-  letter-spacing: 2px;
-  font-size: 30px;
-  margin-bottom: 6px;
+.hero_wrapper h1 {
+  font-size: 4em;
   font-weight: 900;
+  letter-spacing: 3px;
 }
 
-.text_wrap h3 {
-  font-weight: 200;
-  font-size: 18px;
-  margin-bottom: 10px;
+.hero_wrapper h6 {
+  margin-bottom: 30px;
+  margin-top: 10px;
+  letter-spacing: 2px;
 }
 
 .hero_splash {
-  margin-top: 70px;
   /* background-color: black; */
   background-color: #f02d34;
   color: white;
   padding: 10px 20px;
   border: none;
   border-radius: 20px;
-}
-
-.right_wrapp {
-  display: flex;
-  gap: 40px;
-  padding: 10px 10px;
-}
-
-.img_hero {
-  width: 340px;
-  object-fit: cover;
-}
-
-.right_wrapp img {
-  width: 90%;
-  border-radius: 30px;
-}
-
-.right_txt {
-  margin-top: 16em;
-}
-
-.right_txt h4 {
-  font-weight: 800;
-}
-
-.hero_brand {
-  line-height: 1.8em;
-}
-
-.right_txt p {
-  font-weight: 400;
+  width: 50%;
+  margin: auto;
 }
 
 /* Media queries hero section */
 
-@media (max-width: 760px) {
+@media (max-width: 840px) {
   .hero_section {
     width: 100%;
-    display: block;
-    text-align: center;
-    margin-top: 40px;
-  }
-
-  .right_wrapp {
-    display: block;
-    gap: 1px;
-    padding: 1px 1px;
-  }
-  .img_hero {
-    width: 98%;
-    margin: auto;
-    object-fit: cover;
-  }
-
-  .right_wrapp img {
-    width: 100%;
-    border-radius: 30px;
-  }
-
-  .right_txt {
     margin-top: 20px;
-    padding: 5px;
+  }
+}
+
+@media (max-width: 500px) {
+  .hero_section {
+    width: 100%;
+    height: 50vh;
+    align-items: center;
+    margin-top: 20px;
+  }
+  .hero_wrapper {
+    color: #fff;
+    padding: 1em;
+    line-height: 1.8em;
+  }
+
+  .hero_wrapper h1 {
+    font-size: 3em;
+    font-weight: 900;
+    letter-spacing: 3px;
+  }
+
+  .hero_wrapper h6 {
+    margin-bottom: 30px;
+    margin-top: 10px;
+    letter-spacing: 2px;
+  }
+
+  .hero_splash {
+    /* background-color: black; */
+    background-color: #f02d34;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    width: 70%;
+    margin: auto;
   }
 }
 
@@ -690,8 +685,8 @@ textarea:focus {
 }
 /* orders */
 .link {
-  color: blue;
-  border-bottom: 1px solid blue;
+  color: black;
+  border-bottom: 1px solid black;
   padding-bottom: 5px;
   font-size: 15px;
 }
@@ -875,7 +870,7 @@ textarea:focus {
 /* Information part */
 .info_wrapper {
   display: flex;
-  gap: 20px;
+  justify-content: space-evenly;
   flex-wrap: wrap;
   width: 95%;
   margin: auto;
@@ -896,6 +891,7 @@ textarea:focus {
 }
 
 .info_seller {
+  width: 45%;
   border: 5px solid #f02d34;
   border-radius: 10px;
   padding: 10px;
@@ -917,4 +913,39 @@ textarea:focus {
   margin-top: 20px;
   font-size: 18px;
   letter-spacing: 1px;
+}
+
+.info_buyer {
+  width: 45%;
+  border: 5px solid #f02d34;
+  border-radius: 10px;
+  padding: 10px;
+  line-height: 1.8em;
+}
+
+.info_buyer ol {
+  margin-top: 20px;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+
+/* Info media queries */
+
+@media (max-width: 600px) {
+  .info_wrapper {
+    display: block;
+  }
+
+  .info_seller {
+    width: 100%;
+    margin-bottom: 20px;
+    border: 5px solid #f02d34;
+    border-radius: 10px;
+    padding: 10px;
+    line-height: 1.8em;
+  }
+
+  .info_buyer {
+    width: 100%;
+  }
 }

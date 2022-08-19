@@ -3,6 +3,8 @@ import { Link, useHistory } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { logout } from "../Redux/Actions/userActions";
 
+import Blogo from "../assets/vLogo.png";
+
 const Header = () => {
   const [keyword, setKeyword] = useState();
   const dispatch = useDispatch();
@@ -65,9 +67,14 @@ const Header = () => {
               <div className="row ">
                 <div className="col-6 d-flex align-items-center">
                   <Link className="navbar-brand" to="/">
-                    <img
+                    {/* <img
                       alt="logo"
                       src="https://images.pexels.com/photos/1193743/pexels-photo-1193743.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    /> */}
+                    <img
+                      alt="logo"
+                      style={{ width: "100%", objectFit: "cover" }}
+                      src={Blogo}
                     />
                     {/* /images/logo.png */}
                   </Link>
@@ -148,10 +155,8 @@ const Header = () => {
             <div className="row">
               <div className="col-md-3 col-4 d-flex align-items-center">
                 <Link className="navbar-brand" to="/">
-                  <img
-                    alt="logo"
-                    src="https://images.pexels.com/photos/1193743/pexels-photo-1193743.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                  />
+                  <img alt="logo" src={Blogo} />
+                  {/* https://images.pexels.com/photos/1193743/pexels-photo-1193743.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1 */}
                 </Link>
               </div>
               <div className="col-md-6 col-8 d-flex align-items-center">

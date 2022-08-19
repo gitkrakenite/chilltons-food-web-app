@@ -60,6 +60,28 @@ const ShopSection = (props) => {
                         </div>
                       </div>
                     ))}
+                    {
+                      // window.alert(products.length)
+                      products.length < 1 ? (
+                        <div
+                          style={{
+                            backgroundColor: "#eb5e34",
+                            textAlign: "center",
+                            padding: "10px",
+                            borderRadius: "10px",
+                            color: "#fff",
+                          }}
+                        >
+                          <p>
+                            We did not find a product. Make sure you typed the
+                            correct name. Or there's no such a product currently
+                            being sold.{" "}
+                          </p>
+                        </div>
+                      ) : (
+                        console.log("Products found")
+                      )
+                    }
                   </>
                 )}
 

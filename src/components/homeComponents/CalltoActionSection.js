@@ -23,24 +23,29 @@ const CalltoActionSection = () => {
         <p>20% OFF</p>
         <div style={{ marginLeft: "20px" }}>
           <h1>BEST</h1>
-          <h2>TECH</h2>
+          <h2>DEALS</h2>
         </div>
         <h6>Coming Soon</h6>
       </div>
-      <div className="sec_wrap">
-        <img
-          src="https://images.pexels.com/photos/3394650/pexels-photo-3394650.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-          alt="BannerPic"
-        />
+      <div
+        className="sec_wrap"
+        style={{ display: "flex", gap: "10px", flexWrap: "wrap" }}
+      >
         {/* <img
-          src="https://images.pexels.com/photos/1334598/pexels-photo-1334598.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          style={{ width: "400px", height: "400px", objectFit: "cover" }}
+          src="https://images.pexels.com/photos/9706064/pexels-photo-9706064.jpeg?auto=compress&cs=tinysrgb&w=600"
           alt="BannerPic"
         /> */}
+        <img
+          style={{ width: "90%", height: "390px", objectFit: "cover" }}
+          src="https://images.pexels.com/photos/6193631/pexels-photo-6193631.jpeg?auto=compress&cs=tinysrgb&w=600"
+          alt="BannerPic"
+        />
       </div>
       <div className="third_wrap">
-        <p>Valerian best sell</p>
+        <p>Chilltons best sell</p>
         <h2>Flash Sale</h2>
-        <p>We have exciting news. Follow us to stay tuned</p>
+        <p>Check your email for exciting offers </p>
       </div>
     </div>
   );

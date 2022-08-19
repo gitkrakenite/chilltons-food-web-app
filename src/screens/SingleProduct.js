@@ -181,7 +181,7 @@ const SingleProduct = ({ history, match }) => {
                         row="3"
                         value={comment}
                         onChange={(e) => setComment(e.target.value)}
-                        className="col-12 bg-light p-3 mt-2 border-0 rounded"
+                        className="col-12 bg-light p-3 mt-2 border-1 rounded"
                       ></textarea>
                     </div>
                     <div className="my-3">
