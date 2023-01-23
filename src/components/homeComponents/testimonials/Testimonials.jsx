@@ -9,12 +9,12 @@ const Testimonials = () => {
       <div className="testWrapper">
         <div className="testFirstCont">
           <img
-            src="https://images.pexels.com/photos/1633578/pexels-photo-1633578.jpeg?auto=compress&cs=tinysrgb&w=600"
+            src="https://images.pexels.com/photos/315755/pexels-photo-315755.jpeg?auto=compress&cs=tinysrgb&w=1600"
             alt="burger"
           />
           <p>
-            A huge single or triple burger with all the fixings, cheese,
-            lettuce, tomato, onions and special sauce or mayonnaise!.{" "}
+            A huge single or triple pizza with all the fixings, cheese, chicken,
+            tomato, onions and special sauce or mayonnaise!.{" "}
           </p>
         </div>
         <div className="testCenterCont">
@@ -23,8 +23,18 @@ const Testimonials = () => {
             alt="food"
           />
           <p>
-            Eat with relish, toy with our food, or take a tentative mouthful.
-            Cooked with love and care.
+            Eat with relish and take a tentative mouthful. We give you what you
+            paid for. That good delightful bite
+          </p>
+        </div>
+        <div className="testLastCont">
+          <img
+            src="https://images.pexels.com/photos/4519050/pexels-photo-4519050.jpeg?auto=compress&cs=tinysrgb&w=1600"
+            alt="juice"
+          />
+          <p>
+            Take a trip down the healthy side of the diet. Our salads are
+            crafted carefully so that nothing is too much.
           </p>
         </div>
         <div className="testLastCont">

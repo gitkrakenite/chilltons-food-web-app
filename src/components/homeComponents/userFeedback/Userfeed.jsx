@@ -4,8 +4,9 @@ import "./userfeed.css";
 const Userfeed = () => {
   return (
     <div className="userFeedContainer">
-      <h2>What our Customers have to say</h2>
-      <div className="color-change-5x">
+      <h2>Contact Us Today</h2>
+
+      {/* <div className="color-change-5x">
         <div className="first_feed">
           <img
             src="https://images.pexels.com/photos/718978/pexels-photo-718978.jpeg?auto=compress&cs=tinysrgb&w=600"
@@ -47,7 +48,7 @@ const Userfeed = () => {
             </p>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };
