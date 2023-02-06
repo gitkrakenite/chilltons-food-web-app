@@ -1,5 +1,7 @@
 # Getting Started with Create React App
 
+Navigate to the .env and add REACT_APP_SERVER_URL = localhost or remote server
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
