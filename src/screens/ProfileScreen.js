@@ -8,7 +8,7 @@ import moment from "moment";
 import { listMyOrders } from "../Redux/Actions/OrderActions";
 
 const ProfileScreen = () => {
-  window.scrollTo(0, 0);
+  // window.scrollTo(0, 0);
 
   const dispatch = useDispatch();
 

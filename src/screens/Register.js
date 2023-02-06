@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { toast } from "react-hot-toast";
 import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import Message from "../components/LoadingError/Error";
@@ -7,7 +8,7 @@ import { register } from "../Redux/Actions/userActions";
 import Header from "./../components/Header";
 
 const Register = ({ location, history }) => {
-  window.scrollTo(0, 0);
+  // window.scrollTo(0, 0);
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -33,20 +34,21 @@ const Register = ({ location, history }) => {
   const submitHandler = (e) => {
     e.preventDefault();
 
-    // if (password === cpassword && terms) {
-    //   window.alert("Everything okay");
-    // } else window.alert("nope");
+    if (password !== cpassword) {
+      toast.error("Password don't match");
+      return;
+    }
 
-    password === cpassword
-      ? setPassCheck(true)
-      : window.alert("Passwords do not match");
-
-    terms
-      ? setTermsCheck(true)
-      : window.alert("please agree to the terms and conditions");
-
-    if (passCheck && termsCheck) {
-      dispatch(register(name, email, password));
+    if (!name || !email || !password) {
+      toast.error("All details are needed");
+      return;
+    } else {
+      try {
+        dispatch(register(name, email, password));
+        toast.success("Success");
+      } catch (error) {
+        toast.error("Registration unsuccesful");
+      }
     }
   };
 
@@ -63,11 +65,11 @@ const Register = ({ location, history }) => {
         >
           <input
             type="text"
-            placeholder="Username (alphabets only)"
+            placeholder="Your name (alphabets only)"
             required
             value={name}
             minLength="3"
-            pattern="[a-zA-Z]+"
+            // pattern="[a-zA-Z]+"
             onChange={(e) => setName(e.target.value)}
           />
           <input
@@ -125,7 +127,7 @@ const Register = ({ location, history }) => {
           />
           {/* Terms and condition */}
 
-          <div
+          {/* <div
             style={{
               display: "flex",
               alignItems: "center",
@@ -150,7 +152,7 @@ const Register = ({ location, history }) => {
                 </Link>
               </label>
             </div>
-          </div>
+          </div> */}
 
           {/* Submit */}
           <button type="submit">Register</button>
