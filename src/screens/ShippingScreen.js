@@ -39,9 +39,9 @@ const ShippingScreen = ({ history }) => {
             type="text"
             autoComplete="false"
             minLength="4"
-            maxlength="15"
+            maxlength="25"
             name="hidden"
-            placeholder="Enter address & House No"
+            placeholder="Enter address or House No"
             value={address}
             required
             onChange={(e) => setAddress(e.target.value)}
@@ -50,13 +50,13 @@ const ShippingScreen = ({ history }) => {
             type="text"
             minLength="4"
             maxlength="15"
-            placeholder="Enter city or town"
+            placeholder="Specifics i.e PAC or TV ROOM"
             value={city}
             required
             onChange={(e) => setCity(e.target.value)}
           />
           <input
-            type="number"
+            type="text"
             minLength="4"
             maxlength="15"
             placeholder="Enter phone number"
@@ -66,7 +66,9 @@ const ShippingScreen = ({ history }) => {
           />
           <input
             type="text"
-            placeholder="Enter county"
+            minLength="4"
+            // maxlength="30"
+            placeholder="Further shipping info"
             value={country}
             required
             onChange={(e) => setCountry(e.target.value)}

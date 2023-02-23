@@ -210,7 +210,8 @@ const OrderScreen = ({ match }) => {
                       <td>
                         <strong>Tax</strong>
                       </td>
-                      <td>Ksh.{order.taxPrice}</td>
+                      {/* <td>Ksh.{order.taxPrice}</td> */}
+                      <td>Ksh.{0.0}</td>
                     </tr>
                     <tr>
                       <td>

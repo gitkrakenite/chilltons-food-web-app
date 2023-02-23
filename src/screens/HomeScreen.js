@@ -39,25 +39,40 @@ const HomeScreen = ({ match }) => {
         </a>
       </div> */}
       <Header />
+      {/* Announcement */}
+
+      <div
+        style={{
+          marginTop: "12px",
+          paddingTop: "10px",
+          paddingBottom: "10px",
+          backgroundColor: "#f02d34",
+          paddingLeft: "10px",
+          color: "white",
+          borderRadius: "5px",
+          textAlign: "center",
+        }}
+      >
+        Hello. Kindly note that we only deliver from 8:00AM to 8:00PM. Delivery
+        off campus is ksh.50 but free within.
+      </div>
 
       {/* Hero section */}
-      <div className="hero_section">
+      <div className="hero_section" style={{ marginTop: "20px" }}>
         <div className="hero_wrapper">
           <h1 className="bounce-top">Chilltons</h1>
           <h6>Powered by DITA</h6>
           <p className="hero_splash" style={{ marginBottom: "15px" }}>
             Experience the best cuisines
           </p>
-          {/* <Link to={"/terms"}>
+        </div>
+      </div>
+      {/* <Link to={"/terms"}>
             <span className="tracking-in-contract" style={{ color: "#fff" }}>
               Please read our terms
             </span>
           </Link> */}
-        </div>
-      </div>
-
       {/* End Hero section */}
-
       <div className="bestpic_text">
         <h4>Trending Delicacies on our list</h4>
         <p>Always ahead. We've got you in mind. You want, we have</p>
@@ -67,7 +82,6 @@ const HomeScreen = ({ match }) => {
       <Testimonials />
       <Userfeed />
       <ContactInfo />
-
       <Footer />
     </div>
   );

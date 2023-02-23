@@ -27,12 +27,11 @@ const PlaceOrderScreen = ({ history }) => {
     cart.cartItems.reduce((acc, item) => acc + item.price * item.qty, 0)
   );
   cart.shippingPrice = addDecimals(cart.itemsPrice > 1000 ? 50 : 200);
-  cart.taxPrice = addDecimals(Number((0.16 * cart.itemsPrice).toFixed(2)));
-  cart.totalPrice = (
-    Number(cart.itemsPrice) +
+  // cart.taxPrice = addDecimals(Number((0.16 * cart.itemsPrice).toFixed(2)));
+  cart.totalPrice = Number(cart.itemsPrice)
     // Number(cart.shippingPrice) +
-    Number(cart.taxPrice)
-  ).toFixed(2);
+    // Number(cart.taxPrice)
+    .toFixed(2);
 
   const orderCreate = useSelector((state) => state.orderCreate);
   const { order, success, error } = orderCreate;
@@ -171,7 +170,8 @@ const PlaceOrderScreen = ({ history }) => {
                   <td>
                     <strong>Tax</strong>
                   </td>
-                  <td>Ksh.{cart.taxPrice}</td>
+                  {/* <td>Ksh.{cart.taxPrice}</td> */}
+                  <td>Ksh.{0.0}</td>
                 </tr>
                 <tr>
                   <td>

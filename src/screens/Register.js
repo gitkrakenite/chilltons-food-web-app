@@ -36,11 +36,13 @@ const Register = ({ location, history }) => {
 
     if (password !== cpassword) {
       toast.error("Password don't match");
+      alert("Passwords don't match");
       return;
     }
 
     if (!name || !email || !password) {
       toast.error("All details are needed");
+      alert("All details are needed");
       return;
     } else {
       try {
@@ -48,6 +50,7 @@ const Register = ({ location, history }) => {
         toast.success("Success");
       } catch (error) {
         toast.error("Registration unsuccesful");
+        alert("Something went wrong");
       }
     }
   };
